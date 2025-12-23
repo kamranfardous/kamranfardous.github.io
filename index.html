@@ -5,48 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md. Kamran Fardous Khan | Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        header { background: #2b6cb0; color: white; padding: 20px; text-align: center; }
-        nav { background: #1a202c; text-align: center; padding: 10px 0; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; line-height: 1.6; }
+
+        /* Header */
+        header { background: #2b6cb0; color: white; padding: 30px 20px; text-align: center; }
+        header h1 { margin-bottom: 10px; }
+
+        /* Navigation */
+        nav { background: #1a202c; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; padding: 12px 0; display: inline-block; }
+        nav a:hover { color: #63b3ed; }
+
+        /* Container */
+        .container { max-width: 900px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+
+        /* Sections */
         section { padding: 20px 0; border-bottom: 1px solid #ccc; }
-        h2 { color: #2b6cb0; }
-        footer { background: #1a202c; color: white; text-align: center; padding: 15px 0; margin-top: 30px; }
+        section:last-child { border-bottom: none; }
+        h2 { color: #2b6cb0; margin-bottom: 15px; }
+
+        /* Contact / Social */
         .social a { margin: 0 10px; color: #2b6cb0; text-decoration: none; }
+        .social a:hover { text-decoration: underline; }
+
+        /* Footer */
+        footer { background: #1a202c; color: white; text-align: center; padding: 15px 0; margin-top: 30px; }
+
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Md. Kamran Fardous Khan</h1>
-        <p>Agricultural Engineer | GIS and Remote Sensing Expert</p>
     </header>
+
+    <!-- Navigation -->
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <!-- Main Container -->
     <div class="container">
+
+        <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
-            <p>Recent MSc graduate with research assistant experience, seeking an entry-level or trainee position where I can contribute through data handling, documentation, coordination, and administrative support, while gaining practical professional experience and growing within the organization. </p>
+            <p>Recent MSc graduate with research assistant experience. Seeking an entry-level or trainee position where I can contribute through data handling, documentation, coordination, and administrative support, while gaining practical professional experience and growing within the organization.</p>
         </section>
+
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
-            <p>Project details coming soon. (You can share specific project titles and summaries to feature here.)</p>
+            <div class="project">
+                <h3>Project 1: Hydrological Analysis for Agricultural Fields</h3>
+                <p>Analyzed water flow and soil moisture patterns using GIS and hydrological modeling to improve irrigation efficiency.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Precision Agriculture Data Collection</h3>
+                <p>Collected and processed field data, mapped crop health, and prepared detailed reports for sustainable farm management.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3: MSc Thesis on Environmental Engineering</h3>
+                <p>Developed a model for environmental impact assessment in agricultural construction projects and documented findings in a comprehensive report.</p>
+            </div>
         </section>
+
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:kamranfardous@gmail.com">kamranfardous@gmail.com</a></p>
             <p>Academic Email: <a href="mailto:kamran.aet@student.sau.ac.bd">kamran.aet@student.sau.ac.bd</a></p>
             <div class="social">
-                <a href="https://www.linkedin.com/in/kamranfardous/">LinkedIn</a>
-                <a href="https://github.com/kamranfardous">GitHub</a>
-                <a href="https://www.facebook.com/profile.php?id=61559735465808">Facebook</a>
-                <a href="https://x.com/KamranFardous">Twitter</a>
+                <a href="https://www.linkedin.com/in/kamranfardous/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/kamranfardous" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/profile.php?id=61559735465808" target="_blank">Facebook</a>
+                <a href="https://x.com/KamranFardous" target="_blank">Twitter</a>
             </div>
         </section>
+
     </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Md. Kamran Fardous Khan</p>
     </footer>
